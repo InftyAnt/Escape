@@ -1,0 +1,125 @@
+#pragma once
+
+// 게임에 사용되는 상수 정의
+
+#define WINDOW_WIDTH 1920
+#define WINDOW_HEIGHT 1080
+
+#define FPS 120
+
+#define CELL_SIZE 60
+
+#define DEFAULT_PLAYER_SPEED 9.0f
+#define PLAYER_BLINK_FRAME FPS / 10
+
+#define GAMEBOARD_WIDTH 20
+#define GAMEBOARD_HEIGHT 12
+
+#define LEFT_MIDDLE_X ((ofGetWidth() - GAMEBOARD_WIDTH * CELL_SIZE) / 4)
+#define RIGHT_MIDDLE_X (ofGetWidth() * 3 / 4 + GAMEBOARD_WIDTH * CELL_SIZE / 4)
+
+#define GRID_LINE_WIDTH 5
+#define DIRECTION_LINE_WIDTH 5
+
+#define ROOM_SIZE 27
+#define MAP_SIZE 5
+#define MIN_ROOM_CNT 15
+#define MAX_ROOM_CNT 22
+
+#define MINIMAP_SIZE 28
+#define MINIMAP_GAP 12
+#define MINIMAP_CELL_SIZE 40
+#define MINIMAP_X (RIGHT_MIDDLE_X - MINIMAP_CELL_SIZE * 5 / 2)
+#define MINIMAP_Y 20
+#define MINIMAP_W 4
+
+#define CURR_ROOM_INDICATOR_SIZE 16
+
+#define HEALTHBAR_X 20
+#define HEALTHBAR_Y 20
+#define HEALTHBAR_L (250 - HEALTHBAR_STROKE_W)
+#define HEALTHBAR_W 20
+#define HEALTHBAR_STROKE_W 5
+
+#define MINERAL_IMAGE_X 20
+#define MINERAL_IMAGE_Y 210
+#define MINERAL_TEXT_X 70
+#define MINERAL_TEXT_Y 210
+
+#define SHOW_ROOM_ZOMBIE_STATE_X RIGHT_MIDDLE_X
+#define SHOW_ROOM_ZOMBIE_STATE_Y (MINIMAP_Y + MINIMAP_CELL_SIZE * 5 + 20)
+
+
+#define MIN_ZOMBIE_CNT 5
+#define MAX_ZOMBIE_CNT 10
+#define VERY_SLOW_ZOMBIE_SPEED 0.5f
+#define QUITE_SLOW_ZOMBIE_SPEED 1.0f
+#define A_LITTLE_SLOW_ZOMBIE_SPEED 1.5f
+#define NORMAL_ZOMBIE_SPEED 2.0f
+#define FAST_ZOMBIE_SPEED 3.0f
+#define BOSS_ZOMBIE_MUL 3
+#define ZOMBIE_DAMAGE 15
+#define ZOMBIE_REBORN_TIME (5 * FPS)
+
+#define ZOMBIE_IMAGE_CHANGE_PERIOD (int) (0.25 * FPS)
+
+#define ENTITY_HEALTH_DRAW_TIME 3 * FPS
+#define ENTITY_HEALTHBAR_Y -14
+#define ENTITY_HEALTHBAR_W 5
+#define ENTITY_HEALTHBAR_STROKE_W 2
+
+#define DEFAULT_ARCHER_FIRST_COOL 0.6
+#define ARROW_SPEED 16
+
+#define DEFAULT_MEDIC_FIRST_COOL 1
+#define SYRINGE_SPEED 12
+#define SYRINGE_STUN_FRAME FPS
+#define SYRINGE_W 2
+
+#define DEFAULT_CHAIRMAN_FIRST_COOL 0.5
+#define CHAIR_ANIMATION_TIME 0.2
+
+#define GAS_STORAGE 29160
+#define GAS_CHARGE 27
+#define GAS_DISCHARGE 16
+#define GAS_SACRIFICE 3240
+#define GAS_STUN_FRAME 0.5 * FPS
+#define GAS_COOL 0.2
+#define GAS_DAMAGE 6
+#define GAS_ANIMATION_TIME GAS_COOL
+
+#define INVENTORY_SIZE 10
+#define ITEM_DROP_P 8
+#define MINERAL_GET_P 70
+#define MINERAL_MIN 20
+#define MINERAL_MAX 80
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+// 직업 종류
+typedef enum {
+	NONE,
+	ARCHER,
+	MEDIC,
+	CHAIRMAN,
+	FIREMAN
+} Job;
+
+// 방향
+typedef enum {
+	Up,
+	Left,
+	Down,
+	Right,
+	DIRECTION_COUNT
+} Direction;
+
+// 방향
+extern int dr[DIRECTION_COUNT];
+extern int dc[DIRECTION_COUNT];
+
+// 임의의 값 반환
+int randInt(int min, int max);
+int randInt(int max);

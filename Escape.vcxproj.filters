@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Item\Item.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Archer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Arrow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Chair.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Chairman.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Fireman.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Gas.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Medic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job\Syringe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\GameManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\JobSelectionManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\Setting.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\UI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map\Map.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map\Room.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Object\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Object\Zombie.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Item\Item.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Archer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Arrow.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Chair.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Chairman.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Fireman.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Gas.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Medic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job\Syringe.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\Camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\GameManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\JobSelectionManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\Setting.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\UI.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map\Map.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map\Room.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map\RoomType.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map\TileType.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Object\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Object\Zombie.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Object\ZombieType.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
